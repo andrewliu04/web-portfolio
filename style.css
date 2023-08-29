@@ -1,39 +1,88 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    background: black;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: white;
+  background: black;
 }
 
 .navbar {
-    padding: 10px 5%;
+  padding: 10px 5%;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 10px 20px;
+  display: inline-block;
+  margin: 10px 20px;
 }
 
 nav ul li a {
-    color:white;
-    text-decoration: none;
-    font-size: 1.8rem;
+  text-decoration: none;
+  font-size: 1.8rem;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav button {
-    color:white;
-    border: none;
-    background: none;
-    font-size: 1.8rem;
+  color:white;
+  border: none;
+  background: none;
+  font-size: 1.8rem;
 }
+
+.body-wrap{
+  margin: 3% 5% 5%;
+}
+
+
+.sidebar {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 210px;
+  row-gap: 1.6rem;
+  margin: 1px;
+}
+
+#headshot img{
+  width: 210px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#bio {
+  font-size: 1.63rem;
+}
+
+#contact-wrap ul li {
+  margin: 8px;
+}
+
+#contact-wrap ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+#contact-wrap ul li a:hover{
+  opacity: 0.5;
+  transition: 0.75s;
+}
+
+.about {
+  font-size: 1.35rem;
+  padding: 2em 6em 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 55%;
+}
+
