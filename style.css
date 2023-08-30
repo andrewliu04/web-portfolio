@@ -61,6 +61,13 @@ nav button {
 
 #bio {
   font-size: 1.63rem;
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 #contact-wrap ul li {
@@ -84,5 +91,16 @@ nav button {
   display: inline-block;
   vertical-align: top;
   width: 55%;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
